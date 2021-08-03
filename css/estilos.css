@@ -1,0 +1,237 @@
+header {
+  background-blend-mode: lighten;
+  background-color: transparent; }
+
+ul, ul li, ul li a, h1, h2, p {
+  color: black; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+header div {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around; }
+  header div a {
+    margin: 0.5rem; }
+  header div nav ul {
+    display: flex;
+    list-style: none; }
+    header div nav ul li {
+      width: fit-content;
+      height: fit-content;
+      background-color: transparent;
+      margin-left: 1.5rem;
+      margin-right: 0.5rem;
+      padding: 0.5rem;
+      display: flex;
+      top: 1rem;
+      position: relative; }
+      header div nav ul li:hover {
+        background-color: #e29d43; }
+        header div nav ul li:hover ul {
+          display: block;
+          position: absolute;
+          top: 3rem; }
+      header div nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
+        display: block;
+        text-align: center;
+        font: normal 1.6rem "Open Sans";
+        text-transform: uppercase; }
+      header div nav ul li ul {
+        position: absolute;
+        display: none;
+        top: 1rem;
+        left: -0.5rem; }
+        header div nav ul li ul li {
+          padding: 0.5rem;
+          margin: 0.5rem;
+          background-color: #828282; }
+
+.VideoFondoIndex {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.EscuchaUltimaCancion {
+  background-color: rgba(0, 0, 0, 0.397);
+  color: white;
+  border: solid 0.1rem white;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  transition: 0.2s;
+  transform: translateY(0.2rem);
+  margin-left: 35%; }
+
+.backgroundpages {
+  background-color: rgba(128, 0, 128, 0.61); }
+
+.main {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 10%;
+  align-items: center;
+  background-image: linear-gradient(to right, grey, #1b5dd8, purple); }
+  .main section article {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem; }
+    .main section article.bienvenidos {
+      background-image: url(/assets/imagenes/bzrp.jpg);
+      background-position: center;
+      background-size: cover;
+      margin-top: 1rem; }
+      .main section article.bienvenidos h1, .main section article.bienvenidos h2 {
+        font-size: 4rem;
+        padding: 0.5rem;
+        color: white;
+        font-weight: 800;
+        background-color: rgba(0, 0, 0, 0.2); }
+      .main section article.bienvenidos p {
+        font-weight: 300;
+        color: white;
+        font-size: 2rem;
+        padding: 0.5rem; }
+      .main section article.bienvenidos a {
+        margin: 1rem;
+        border: solid 0.2rem #e29d43;
+        padding: 0.5rem;
+        color: black;
+        background-color: white;
+        font-weight: 400; }
+      .main section article.bienvenidos ul {
+        display: flex; }
+        .main section article.bienvenidos ul a {
+          border: none;
+          background-color: transparent; }
+    .main section article.musicsessions {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.534), rgba(211, 36, 173, 0.493)); }
+      .main section article.musicsessions h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 3rem;
+        padding: 0.5rem; }
+      .main section article.musicsessions ul {
+        list-style: none;
+        list-style-type: none; }
+        .main section article.musicsessions ul a {
+          border: transparent;
+          background-color: transparent; }
+      .main section article.musicsessions a {
+        margin: 1rem;
+        border: solid 0.2rem #e29d43;
+        padding: 0.5rem;
+        color: black;
+        background-color: white;
+        font-weight: 400; }
+    .main section article.produccionesbzrp {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.534), rgba(211, 36, 173, 0.493)); }
+      .main section article.produccionesbzrp h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 3rem;
+        padding: 0.5rem; }
+      .main section article.produccionesbzrp ul {
+        list-style: none;
+        list-style-type: none; }
+        .main section article.produccionesbzrp ul a {
+          border: transparent;
+          background-color: transparent; }
+      .main section article.produccionesbzrp a {
+        margin: 1rem;
+        border: solid 0.2rem #e29d43;
+        padding: 0.5rem;
+        color: black;
+        background-color: white;
+        font-weight: 400; }
+    .main section article.freestylesessions {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.534), rgba(211, 36, 173, 0.493)); }
+      .main section article.freestylesessions h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 3rem;
+        padding: 0.5rem; }
+      .main section article.freestylesessions ul {
+        list-style: none;
+        list-style-type: none; }
+        .main section article.freestylesessions ul a {
+          border: transparent;
+          background-color: transparent; }
+      .main section article.freestylesessions a {
+        margin: 1rem;
+        border: solid 0.2rem #e29d43;
+        padding: 0.5rem;
+        color: black;
+        background-color: white;
+        font-weight: 400; }
+    .main section article.e-shop {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.534), rgba(211, 36, 173, 0.493)); }
+      .main section article.e-shop h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-bottom: 3rem;
+        padding: 0.5rem; }
+      .main section article.e-shop ul {
+        list-style: none;
+        list-style-type: none; }
+        .main section article.e-shop ul div .eshop {
+          font-family: 'Josefine Sans';
+          font-size: 2rem;
+          background-color: violet;
+          color: black; }
+        .main section article.e-shop ul a {
+          border: transparent;
+          background-color: transparent; }
+      .main section article.e-shop a {
+        margin: 1rem;
+        border: solid 0.2rem #e29d43;
+        padding: 0.5rem;
+        color: black;
+        background-color: white;
+        font-weight: 400; }
+
+@media (min-width: 640px) {
+  .main {
+    margin-top: 40%; }
+  .EscuchaUltimaCancion {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Josefine Sans' cursive; } }
+
+footer {
+  background-color: black; }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem; }
+    footer ul li {
+      margin: 3rem; }
+  footer div a {
+    align-items: center;
+    justify-content: center; }
+  footer div h2 {
+    color: white;
+    font-weight: 600; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif; }

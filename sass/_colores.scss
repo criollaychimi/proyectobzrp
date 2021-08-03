@@ -1,0 +1,19 @@
+header {
+    background-blend-mode: lighten;
+    background-color: transparent;
+}
+
+ul, ul li, ul li a, h1, h2, p {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+$ColorHover: rgb(226, 157, 67);
+
+$FondoSubmenu: rgb(130,130,130);
+
+$FuenteMenu: normal 1.6rem 'Open Sans';
