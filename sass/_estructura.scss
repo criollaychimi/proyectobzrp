@@ -1,15 +1,14 @@
 header {
-    div {
+
+        width: 100%;
         background-color: transparent;
         display: flex;
-        justify-content: space-around;
-
-        a {
-           margin: 0.5rem;
+        justify-content: center;
 
         }
         nav {
-            
+            display: inline-block;
+            width: 100%;
             
             ul {
                 display: flex;
@@ -33,7 +32,7 @@ header {
                         ul {
                             display: block;
                             position: absolute;
-                            top: 3rem;
+                            top: 1rem;
                         }
                     }
                     a {
@@ -63,8 +62,6 @@ header {
                 }
             }
         }
-    }
-}
 
 .VideoFondoIndex {
     width: 100%;
@@ -86,15 +83,35 @@ header {
 }
 
 .backgroundpages {
-    background-color: rgba(128, 0, 128, 0.61);
-}
+        background: linear-gradient(359deg, #000000, #8b16c1, #360d87, #030303);
+        background-size: 800% 800%;
+    
+        -webkit-animation: FondoPaginas 36s ease infinite;
+        -moz-animation: FondoPaginas 36s ease infinite;
+        animation: FondoPaginas 36s ease infinite;
+    }
+    
+    @-webkit-keyframes FondoPaginas {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @-moz-keyframes FondoPaginas {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @keyframes FondoPaginas {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
 
 .main {
     display: flex;
     flex-flow: column wrap;
     margin-top: 10%;
     align-items: center;
-    background-image: linear-gradient(to right, grey, rgb(27, 93, 216), purple);
     
     section {
 
@@ -142,7 +159,7 @@ header {
                 }
             }
             &.musicsessions {
-                background-image: radial-gradient(rgba(255, 255, 255, 0.534),rgba(211, 36, 173, 0.493));
+                
                 h1 {
                     font-size: 4rem;
                     font-weight: 500;
@@ -168,7 +185,7 @@ header {
                 }
             }
             &.produccionesbzrp {
-                background-image: radial-gradient(rgba(255, 255, 255, 0.534),rgba(211, 36, 173, 0.493));
+                
                 h1 {
                     font-size: 4rem;
                     font-weight: 500;
@@ -194,7 +211,7 @@ header {
                 }
             }
             &.freestylesessions {
-                background-image: radial-gradient(rgba(255, 255, 255, 0.534),rgba(211, 36, 173, 0.493));
+                
                 h1 {
                     font-size: 4rem;
                     font-weight: 500;
@@ -220,18 +237,26 @@ header {
                 }
             }
             &.e-shop {
-                background-image: radial-gradient(rgba(255, 255, 255, 0.534),rgba(211, 36, 173, 0.493));
+
+                display: flex;
+                display: block;
+                top: 1rem;
+                
                 h1 {
                     font-size: 4rem;
                     font-weight: 500;
                     background-color: rgba(0, 0, 0, 0.2);
                     margin-bottom: 3rem;
                     padding: 0.5rem;
+                    
                 }
                 ul {
                     list-style: none;
                     list-style-type: none;
                     div {
+
+                        display: flex;
+                        flex-flow: column nowrap;
 
                     .eshop {
                         font-family: 'Josefine Sans';
@@ -246,17 +271,51 @@ header {
                     }
                 }
                 a {
-                    margin: 1rem;
+                    margin: 7rem;
                     border: solid 0.2rem $ColorHover;
                     padding: 0.5rem;
                     color: black;
                     background-color: white;
                     font-weight: 400;
                 }
+                
+            }
+            &.quienesbizarrap {
+
+                top: 1rem;
+                display: flex;
+                width: 80vw;
+                flex-flow: column nowrap;
+
+                h1 {
+                
+                        font-size: 4rem;
+                        font-weight: 500;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        margin-bottom: 3rem;
+                        padding: 0.5rem;
+                    }
+                
+                p {
+                    font-size: 2rem;
+                    background-color: rgba(white, 0.2);
+                    margin-bottom: 1rem;
+                }
+                
+                ul {
+                    display: flex;
+                    li {
+                        display: inline-block;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                }
+
             }
         }
     }
-}
 
 @media (min-width:640px) {
     .main {
@@ -281,15 +340,25 @@ footer {
             margin: 3rem;
         }
     }
-    div {
+    .footerItem {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
         a{
             align-items: center;
             justify-content: center;
+            margin-bottom: 0.5rem;
         }
         h2 {
             color: white;
             font-weight: 600;
-
+            margin-bottom: 0.5rem;
+        }
+        &.inputType {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
         }
     }
 }

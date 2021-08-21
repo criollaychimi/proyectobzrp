@@ -3,6 +3,33 @@ header {
     background-color: transparent;
 }
 
+body {
+
+    background: linear-gradient(359deg, #000000, #8b16c1, #360d87, #030303);
+        background-size: 800% 800%;
+    
+        -webkit-animation: FondoPaginas 36s ease infinite;
+        -moz-animation: FondoPaginas 36s ease infinite;
+        animation: FondoPaginas 36s ease infinite;
+    }
+    
+    @-webkit-keyframes FondoPaginas {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @-moz-keyframes FondoPaginas {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @keyframes FondoPaginas {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+
+
 ul, ul li, ul li a, h1, h2, p {
     color: black;
 }
@@ -16,4 +43,4 @@ $ColorHover: rgb(226, 157, 67);
 
 $FondoSubmenu: rgb(130,130,130);
 
-$FuenteMenu: normal 1.6rem 'Open Sans';
+$FuenteMenu: normal 2vw 'Open Sans';

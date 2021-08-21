@@ -7,23 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet"> <!-- font-family: 'Josefin Sans', sans-serif; -->
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Shows - Bizarrap oficial</title>
 </head>
 
 <body>
 
     <header>
-
-        <div>
-            <a href="/index.html"><img src="/assets/imagenes/gorralogo.png" width="53.5" height="50"></a>
+            
             <nav>
                 <ul>
+                    <li><a href="../index.html"><img src="../assets/imagenes/gorralogo.png" width="53.5" height="50"></a></li>
                     <li><a>musica</a>
                         <ul>
                             <li><a href="musicsessions.html">music sessions</a></li>
                             <li><a href="freestylesessions.html">freestyle sessions</a></li>
-                            <li><a href="pages/produccionesbzrp.html">bzrp producciones</a></li>
+                            <li><a href="produccionesbzrp.html">bzrp producciones</a></li>
                         </ul>
                     </li>
                     <li><a href="e-shop.html">e-shop</a></li>
@@ -33,17 +32,15 @@
             
             </nav>
 
-        </div>
-
     </header>
 
-    <main>
+    <main class="main">
 
         <section>
 
             <article>
                 <h1>EN CONSTRUCCION</h1>
-                <img src="/assets/imagenes/comingsoon.png" alt="construccion" width="200" height="200">
+                <img src="../assets/imagenes/comingsoon.png" alt="construccion" width="200" height="200">
             </article>
 
         </section>
@@ -53,26 +50,27 @@
     <footer>
 
         <ul>
-            <li><a href="https://www.youtube.com/channel/UCmS75G-98QihSusY7NfCZtw"><img src="/assets/imagenes/youtubelogo.png" width="71" height="50"></a></li>
-            <li><a href="https://www.instagram.com/bizarrap/"><img src="/assets/imagenes/instagramlogo.png" width="50" height="50"></a></li>
-            <li><a href="https://open.spotify.com/artist/716NhGYqD1jl2wI1Qkgq36"><img src="/assets/imagenes/spotifylogo.png" width="50" height="50"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCmS75G-98QihSusY7NfCZtw"><img src="../assets/imagenes/youtubelogo.png" width="71" height="50"></a></li>
+            <li><a href="https://www.instagram.com/bizarrap/"><img src="../assets/imagenes/instagramlogo.png" width="50" height="50"></a></li>
+            <li><a href="https://open.spotify.com/artist/716NhGYqD1jl2wI1Qkgq36"><img src="../assets/imagenes/spotifylogo.png" width="50" height="50"></a></li>
         </ul>
 
-        <div>
-            <a href="/index.html"><img src="/assets/imagenes/gorralogo.png" width="53.5" height="50"></a>
+        <div class="footerItem">
+            <a href="index.html"><img src="../assets/imagenes/gorralogo.png" width="53.5" height="50"></a>
         </div>
 
-        <div>
+        <div class="footerItem">
             <h2> 2021 BIZARRAP OFICIAL. TODOS LOS DERECHOS RESERVADOS.</h2>
         </div>
 
-        <div>
+        <div class="footerItem">
             <h2>SUSCRIBITE PARA NO PERDERTE NINGUNA NOVEDAD</h2>
-            <input type="email" placeholder="E-mail">
+            <input id="inputType" type="email" placeholder="E-mail">
             <input type="submit">
         </div>
 
     </footer>
+
 
 </body>
 </html>
