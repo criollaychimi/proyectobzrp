@@ -123,7 +123,7 @@ header {
         margin-top: 3rem;
 
             &.bienvenidos {
-                background-image: url(/assets/imagenes/bzrp.jpg);
+                background-image: url(../assets/imagenes/bzrp.jpg);
                 background-position: center;
                 background-size: cover;
                 margin-top: 1rem;
@@ -152,15 +152,20 @@ header {
                 }
                 ul {
                     display: flex;
-                    a {
-                        border: none;
-                        background-color: transparent;
+                    li {
+                        list-style-type: none;
+                        a {
+                            border: none;
+                            background-color: transparent;
+                            text-decoration: none;
+                        }
                     }
                 }
             }
             &.musicsessions {
                 
                 h1 {
+                    color: white;
                     font-size: 4rem;
                     font-weight: 500;
                     background-color: rgba(0, 0, 0, 0.2);
@@ -187,6 +192,7 @@ header {
             &.produccionesbzrp {
                 
                 h1 {
+                    color: white;
                     font-size: 4rem;
                     font-weight: 500;
                     background-color: rgba(0, 0, 0, 0.2);
@@ -213,6 +219,7 @@ header {
             &.freestylesessions {
                 
                 h1 {
+                    color: white;
                     font-size: 4rem;
                     font-weight: 500;
                     background-color: rgba(0, 0, 0, 0.2);
@@ -243,6 +250,7 @@ header {
                 top: 1rem;
                 
                 h1 {
+                    color: white;
                     font-size: 4rem;
                     font-weight: 500;
                     background-color: rgba(0, 0, 0, 0.2);
@@ -258,25 +266,28 @@ header {
                         display: flex;
                         flex-flow: column nowrap;
 
-                    .eshop {
-                        font-family: 'Josefine Sans';
-                        font-size: 2rem;
-                        background-color: violet;
-                        color: black;
+                        .eshop {
+                            font-family: 'Josefine Sans';
+                            font-size: 2rem;
+                            background-color: violet;
+                            color: white;
+                        }
                     }
-                }
                     a{
+                        display: inline-block;
+                        margin-top: 0.5rem;
                         border: transparent;
                         background-color: transparent;
                     }
                 }
                 a {
-                    margin: 7rem;
+                    margin: 3rem;
                     border: solid 0.2rem $ColorHover;
                     padding: 0.5rem;
                     color: black;
                     background-color: white;
                     font-weight: 400;
+                    display: inline-block;
                 }
                 
             }
@@ -288,7 +299,7 @@ header {
                 flex-flow: column nowrap;
 
                 h1 {
-                
+                        color: white;
                         font-size: 4rem;
                         font-weight: 500;
                         background-color: rgba(0, 0, 0, 0.2);
@@ -317,6 +328,9 @@ header {
         }
     }
 
+#mainPages {
+    margin-top: 2%;
+}
 @media (min-width:640px) {
     .main {
         margin-top: 40%;
